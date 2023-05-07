@@ -1,0 +1,9 @@
+#This is how you could download the graphics.py
+
+Open the link below:
+https://mcsp.wartburg.edu/zelle/python/graphics.py
+
+1. Copy the whole text from that page
+2. Open a new IDLE file
+3. Paste the whole text in the new IDLE file (save as graphics.py)
+4. Make sure graphics.py & coding file are saved in same folder
