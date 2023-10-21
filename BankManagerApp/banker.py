@@ -27,6 +27,8 @@ manage their bank accounts and keep track of their finances.
 #Created By @MdBillah
 
 def main():
+    #BankManager is package, BankManager() is a class and bm instance of BankManager class
+
     bm = BankManager.BankManager()
 
     op = ''

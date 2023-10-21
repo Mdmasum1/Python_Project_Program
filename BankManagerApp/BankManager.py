@@ -16,13 +16,13 @@ def currency(amount):
         return '-$' + '{:,.2f}'.format(abs(amount))
     else:
         return '$' + '{:,.2f}'.format(amount)
-
+    
 class BankManager():
 
     # constructor
     def __init__(self):
         self.accounts = []
-
+    
     # given an account number, return the associated account or None if there
     # is no account with that number
     def find_account(self, ID):
@@ -30,7 +30,8 @@ class BankManager():
             if account.getID() == ID:
                 return account
         return None
-
+    
+    
     # advance the time by one day by adding interest to every savings
     # account that is not overdrawn
     def newDay(self):
