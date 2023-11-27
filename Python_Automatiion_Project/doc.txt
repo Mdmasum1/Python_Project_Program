@@ -1,0 +1,9 @@
+**Some companies sell innovative (and pricey) “automation solutions,” 
+usually marketed as robotic process automation (RPA). These products are 
+effectively no different than the Python scripts you can make yourself with 
+the pyautogui module, which has functions for simulating mouse movements, button clicks, and mouse wheel scrolls. This chapter covers only 
+a subset of PyAutoGUI’s features; you can find the full documentation .
+--> https://pyautogui.readthedocs.io/
+
+***To install PyAutoGUI using pip, you can use the following command in your command prompt or terminal:
+--->pip install pyautogui
