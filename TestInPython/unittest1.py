@@ -10,7 +10,7 @@ def add(x,y):
 #which are regular Python methods whose names
 #start with the word 'test'.
 
-class Testaddition(unittest.TestCase):
+class TestAddition(unittest.TestCase):
 
     def test_add_positive_num(self):
         res = add(2,3)
