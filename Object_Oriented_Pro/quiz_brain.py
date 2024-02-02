@@ -13,3 +13,4 @@ class QuizBrain:
         self.question_number += 1
         input(f"Q.{self.question_number}: {current_question.text} (True/Flase): ")
 
+    def check_answer():
