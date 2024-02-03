@@ -21,3 +21,12 @@ while quiz.still_has_question():#if quiz still has questions remaining;
     
     quiz.next_question()
 
+print("You've complete the quiz")
+print(f"your score was: 10/12")
+
+
+
+
+
+
+
