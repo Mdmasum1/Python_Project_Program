@@ -32,7 +32,8 @@ async def read_books(book_title: str):
    
 
 
-
+async def read_category_by_query(category: str):
+    
 
 
 
