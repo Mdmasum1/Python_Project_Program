@@ -42,11 +42,20 @@ async def read_category_by_query(category: str):
 
     return books_to_return
 
-
+# post creates the new book
 @app.post("/books/create_book")
 async def create_book(new_book=Body()):
     BOOKS.append(new_book)
     
+#Put updates the book informatio
+@app.put("/books/update_book")
+async  def udpate_book(updated_book=Body()):
+    for i in range(len(BOOKS)):
+        if BOOKS[i].get('title').casefold() == updated_book.get('title').casefold():
+
+            BOOKS[i] = updated_book
+        
+  
 
 
 
