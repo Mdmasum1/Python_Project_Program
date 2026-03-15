@@ -64,7 +64,10 @@ async def delete_book(book_title: str):
             BOOKS.pop(i)
             break
 
-
+'''
+Get all books from specific author using path or query parameters
+  
+'''
         
 
 
