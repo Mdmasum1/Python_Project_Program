@@ -68,7 +68,22 @@ async def delete_book(book_title: str):
 Get all books from specific author using path or query parameters
   
 '''
-        
+# path parameter solution
+@app.get("/books/byauthor{author}")
+async def read_by_books_author_path(author:str):
+    book_to_return = []
+    for book in BOOKS:
+
+        if book.get('author').casefold() == author.casefold():
+
+            book_to_return.append(book)
+
+    return book_to_return
+
+ #order is a mater in the FastAPI , such as short api goes first then detauls
+ # api goes later.
+
+       
 
 
 
