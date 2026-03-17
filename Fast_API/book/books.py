@@ -80,7 +80,7 @@ async def read_by_books_author_path(author:str):
 
     return book_to_return
 
- #order is a mater in the FastAPI , such as short api goes first then detauls
+ #order is a mater in the FastAPI , such as short api goes first then details
  # api goes later.
 
        
