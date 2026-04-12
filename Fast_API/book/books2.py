@@ -19,9 +19,19 @@ class Book:
         self.rating = rating
 
 # Inside BOOK , create some book object and return the BOOK
+#list of book
 
-BOOKS = []
+BOOKS = [
 
+    Book(1, "Computer Science Pro", "Codingwihtmd", 'A very nice book!', 5),
+    Book(2, "Be Fast with FasAPI", "Codingwihtmd", 'A great book!', 5),
+    Book(3, "Master Endpoints", "Codingwihtmd", 'A awesome book!', 5),
+    Book(4, "Hp1", "Author 1", 'Book Description', 2),
+    Book(5, "Hp2", "Author 2", 'Book Description', 3),
+    Book(6, "Hp3", "Author 3", 'Book Description', 1)
+
+
+]
 
 
 
