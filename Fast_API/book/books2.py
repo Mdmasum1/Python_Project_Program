@@ -1,4 +1,5 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Body
+from pydantic import BaseModel
 
 app = FastAPI()
 
@@ -15,8 +16,18 @@ class Book:
     def __init__(self, id, title, author, description, rating):
         self.id = id
         self.title = title
+        self.description = description
         self.author = author
         self.rating = rating
+
+class BookRequest(BaseModel):
+    id: int
+    title: str
+    author: str
+    description: str
+    rating: int
+
+
 
 # Inside BOOK , create some book object and return the BOOK
 #list of book
@@ -40,4 +51,13 @@ BOOKS = [
 @app.get("/books")
 async def read_all_books():
     return BOOKS
+
+#Create post api endpoint
+@app.post("/create_book")
+async def creat_book(book_request: BookRequest):
+    new_book = Book(**book_request.dict())
+    BOOKS.append(new_book)
+    return new_book
+
+
 
