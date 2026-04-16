@@ -20,6 +20,7 @@ class Book:
         self.author = author
         self.rating = rating
 
+#pydantic/BaseModel for more and more data validation
 class BookRequest(BaseModel):
     id: int
     title: str
@@ -58,6 +59,4 @@ async def creat_book(book_request: BookRequest):
     new_book = Book(**book_request.dict())
     BOOKS.append(new_book)
     return new_book
-
-
 
