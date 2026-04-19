@@ -58,8 +58,8 @@ async def read_all_books():
 @app.post("/create_book")
 async def creat_book(book_request: BookRequest):
     new_book = Book(**book_request.model_dump()) #You can also use dict() instead but it is old way
-    print(type(new_book))
-    BOOKS.append(new_book)
+    #print(type(new_book))
+    BOOKS.append(find_book_id(new_book))
 
 
 def find_book_id(book: Book):
