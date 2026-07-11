@@ -1,0 +1,7 @@
+
+## For everytime run on the server using commnad start with the uvicorn
+
+$ uvicorn books2:app --reload
+
+
+
